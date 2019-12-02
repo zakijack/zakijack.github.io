@@ -17,7 +17,7 @@
     box.on('click', handleBoxClick);
 
     // moves the Box to a new position on the screen along the X-Axis
-    function moveBoxTo(newPositionX) {
+    function moveBoxTo(boardWidth); {
         box.css("left", newPositionX);
     }
 
@@ -32,16 +32,35 @@
     
     // TODO 2 - Variable declarations 
     
+        var positionX = 0
+        var myVariable = someValue;
+        
+        // during update... 
+// Frame 1
+positionX = 0 + 10;         // positionX = 10
+moveBoxTo(positionX);
 
-    
+// Frame 2
+positionX = 10 + 10;         // positionX = 20
+moveBoxTo(positionX);
+
+// Frame 3
+positionX = 20 + 10;         // positionX = 30
+moveBoxTo(positionX);
+
+// Frame 4
+positionX = 30 + 10;         // positionX = 40
+moveBoxTo(positionX);
+
+// so on...
     /* 
     This Function will be called 20 times/second. Each time it is called,
     it should move the Box to a new location. If the box drifts off the screen
     turn it around! 
     */
-    function update() {
+    function update(100) {
         
-
+var myVariable = someValue;
     };
 
     /* 
@@ -49,9 +68,8 @@
     it should increase the points total, increase the speed, and move the box to
     the left side of the screen.
     */
-    function handleBoxClick() {
-        
+   function update() {
+    moveBoxTo(positionX);
 
-
-    };
+};
 })();
