@@ -45,7 +45,7 @@ positionX = 10 + 10;         // positionX = 20
 moveBoxTo(positionX);
 
 // Frame 3
-positionX = 20 + 10;         // positionX = 30
+positionX = 240 + 10;         // positionX = 250
 moveBoxTo(positionX);
 
 // Frame 4
@@ -70,6 +70,6 @@ var myVariable = someValue;
     */
    function update() {
     moveBoxTo(positionX);
-
+    box.css("left", newPositionX);
 };
 })();
