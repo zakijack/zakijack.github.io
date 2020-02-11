@@ -20,6 +20,7 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
        
         // TODO 1 : Declare and initialize our variables
+        //test comment ---delete after confirming website updates
         var circle;
         var circles = [];
         var loopsCompleted = 0;
